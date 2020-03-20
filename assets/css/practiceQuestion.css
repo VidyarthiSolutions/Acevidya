@@ -1,0 +1,180 @@
+html,body
+    {
+        font-family:                'Muli', sans-serif;
+        background-color:           #e1e8e3;
+    }
+
+.answer
+    {
+        padding:                    15px 20px;
+        border:                     1px solid #bbb;
+        transition:                 all .2s ease-in-out;
+        
+    }
+
+.answer:hover
+    {
+        cursor:                     pointer;
+        transform:                  scale(1.06);
+        border:                     1px solid #000000;          
+    }  
+
+.eachQuestion
+    {
+        padding:                    5%;
+        margin-bottom:              10%;
+        background-color:           #ffffff;
+        box-shadow:                 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius:              5px;
+    }
+.eachQuestion img
+    {
+        width:                      100%;
+    }
+.grid-container 
+    {
+        display:                    grid;
+        grid-template-columns:      auto auto auto auto;
+        padding:                    2px;
+    }
+
+.grid-item 
+    {
+        padding:                    10px;
+        font-size:                  70%;
+        text-align:                 center;
+        margin:                     5%;
+        border:                     2px solid #66b8d1;
+        background-color:           #ffffff;
+        transition:                 all .2s ease-in-out;
+    }
+
+.grid-item:hover
+    {
+        cursor:                     pointer;
+        background-color:           #35d4d4; 
+        transform:                  scale(1.02);
+        box-shadow:                 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+.bttn
+    {
+        display:                    inline-block;
+        text-align:                 center;
+        vertical-align:             middle;
+        overflow:                   hidden;
+        border:                     1px solid #bbb;
+        font-size:                  20px;
+        background-color:           #ffffff;
+        padding:                    0.7%;
+    }
+
+.bttn:hover
+    {
+        cursor:                     pointer;
+        background-color:           #f3edfc; 
+    }
+
+.warning
+    {
+        border:                     2px solid #d13c34;
+        background-color:           #ffa19c; 
+    }
+
+.warning-outline
+    {
+        border:                     2px solid #d13c34;
+    }
+
+.attempted
+    {
+        background-color:           #56f5ca;
+        border:                     2px solid #1f7a62;
+    }
+
+.success
+    {
+        border:                     2px solid #007E33;
+        background-color:           #80cbc4;
+    }
+.success-outline
+    {
+        border:                     2px solid #007E33;
+    }
+    
+.heading
+    {
+        background-color:           #546e7a;
+        color:                      #ffffff;
+        padding:                    1%;
+        margin-top:                 1%;
+        margin-bottom:              1%;
+        border-radius:              5px;
+    }
+
+.notAttempted
+    {
+        background-color:           #fffb00;
+    }
+
+.attempted_div
+    {
+        background-color:           #f7fcf9;
+        padding:                    5%;
+    }
+big
+    {
+        font-size:                  35px !important;
+    }
+.btnDark
+    {
+        background-color:           #000000;
+        color:                      #ffffff;
+    }
+.btnDark:hover
+    {
+        color:                      #ffffff;
+    }
+
+.btnBright
+    {
+        border:                     1px solid #000000;
+        background-color:           #ffffff;
+    }
+.btn
+    {
+        margin-top:                 2%;
+        margin-bottom:              2%;
+        transition:                 all .2s ease-in-out;
+    }
+.btn:hover
+    {
+        cursor:                     pointer;
+        transform:                  scale(1.07);
+    }
+
+.btnC
+    {
+        border-radius:              50%;
+        height:                     35px;
+        width:                      35px;
+        background-color:           #ffffff;
+        border:                     1px solid #1a2c4a;
+        transition:                 all .2s ease-in-out;
+    }
+.btnC:hover
+    {
+        background-color:           #1a2c4a !important;
+        color:                      #ffffff;
+        transform:                  scale(1.1);
+        cursor:                     pointer;
+    }
+.successC
+    {
+        background-color:           #000000;
+        color:                      #ffffff;
+    }
+.attemptedC
+    {
+        transform:                  scale(1.1);
+    }

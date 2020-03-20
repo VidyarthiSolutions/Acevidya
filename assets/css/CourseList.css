@@ -1,0 +1,300 @@
+/*
+FONT FAMILY:      Muli;
+COLOR HEX-CODE:   #546e7a;
+REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PARAGRAPH;
+*/  
+  html, body 
+  {
+    margin:               0;
+    padding:              0;
+    width:                100%;
+  }
+
+  body 
+  {
+    font-family:          'Muli', sans-serif !important;
+    font-weight:          lighter;
+  }
+
+  header 
+  {
+    width:                100%;
+    /*height:             40vh !important;*/
+    background-size:      cover;
+  }
+  
+  hr
+  { 
+    display:              block;
+    border-top:           3px solid #546e7a;
+  }
+
+  .content 
+  {
+    margin:               4em auto;
+  }
+
+  .content img
+  {
+    width:                100%;
+  }
+
+  h3    
+  {
+    color:                #546e7a;
+  }
+
+  h1    
+  {
+    color:                #546e7a;
+  }   
+
+  .logo 
+  {
+    line-height:          40px;
+    position:             fixed;
+    float:                left;
+    margin:               10px 46px;
+    color:                #ffffff;
+    font-weight:          bold;
+    font-size:            19px;
+    letter-spacing:       2px;
+    cursor:               pointer;
+    transition:           1s;
+  }
+
+  .logo.black
+  {
+    color:                #ffffff;
+  }
+
+  nav
+  {
+    position:             fixed;
+    width:                100%;
+    line-height:          40px;
+    z-index:              99;
+  }
+
+  nav ul 
+  {
+    line-height:          30px;
+    list-style:           none;
+    background:           rgba(0, 0, 0, 0);
+    overflow:             hidden;
+    color:                #fff;
+    padding:              0;
+    text-align:           right;
+    margin:               0;
+    padding-right:        40px;
+    transition:           1s;
+  }
+
+  nav.black ul 
+  {
+    background-color:     rgba(84,110,122,0.8);
+  }
+
+  nav ul li
+  {
+    display:              inline-block;
+    padding:              10px 30px;
+  }
+
+  nav ul li:hover 
+  {
+    cursor:               pointer;
+  }
+
+  nav ul li a 
+  {
+    text-decoration:      none;
+    font-size:            15px;
+    transition:           1s;
+    color:                #ffffff !important;
+  }
+  
+  nav.black ul li a
+  {
+    color:                #ffffff;
+  }
+
+  nav ul li a:hover
+  {
+    text-decoration:      none;
+  }
+
+  .menu-icon
+  {
+    line-height:          30px;
+    width:                100%;
+    background-color:     #546e7a;
+    text-align:           right;
+    box-sizing:           border-box;
+    padding:              15px 18px;
+    cursor:               pointer;
+    color:                #fff;
+    display:              none;
+  }
+
+  .dataRender a
+  {
+    text-decoration:      none;
+    color:                #546e7a;
+  }
+
+  .addressbar
+  {
+    text-align:           justify-all;
+    width:                100%;
+    margin-top:           13%;
+    padding-top:          2%; 
+    padding-bottom:       4%;
+    background-color:     #050F0B;
+  }
+
+  .footer 
+  {
+    padding-top:          2%;
+    width:                100%;
+    background-color:     #222625;
+    padding-top:          3%;
+    color:                white;
+    text-align:           center;
+    font-size:            15px;
+  }
+
+  .footer a
+  {
+    text-decoration:      none;
+    padding-top:          50%;
+    color:                #fff;
+  }
+
+  .footerleft
+  {
+    float:                left;
+    margin-left:          3%;
+    width:                20%;
+    text-align:           left;
+  }
+
+  .socialBar
+  {
+    width:                100%;
+    margin-bottom:        1%; 
+    text-align:           center;    
+  }
+  .socialBar a
+  {
+    padding:              3%;
+  }
+
+  .grid-container 
+  {
+    display:              grid;
+    grid-template-columns:auto auto auto;
+  }
+
+  .grid-container a
+  {
+    text-decoration:      none;
+    color:                black;
+    font-weight:          lighter;
+  }
+  .grid-item 
+  {
+    text-align:           justify-all;
+    margin:               3%;
+  }
+  .datetime 
+  {
+    font-size:            14px;
+    margin-top:           -5%;
+    margin-bottom:        -4%;
+    color:                #01a897;
+  }
+  .courseDiv
+  {
+    transition:           all .2s ease-in-out;
+  }
+  .courseDiv:hover
+  {
+    border:               2px solid #546e7a;
+    transform:            scale(1.08); 
+    cursor:               pointer;
+  }
+  .courseDiv img
+  {
+    height:               300px;
+  }
+
+
+  @media(max-width: 650px)
+  {
+    
+    .grid-container
+    {
+      display: grid;
+      grid-template-columns: auto;
+    }
+
+    .logo 
+    {
+      position:           fixed;
+      top:                0;
+      margin-top:         16px;
+      color:              #ffffff;
+      margin-left:        37%;
+    }
+
+    nav ul 
+    {
+      max-height:         0px;
+      background-color:   #546e7a;
+    }
+
+    nav.black ul 
+    {
+      background-color:   #546e7a;
+    }
+
+    .showing 
+    {
+      max-height:         34em;
+    }
+
+    nav ul li 
+    {
+      box-sizing:         border-box;
+      width:              100%;
+      padding:            15px;
+      text-align:         center;
+    }
+
+    nav ul li a
+    {
+      color:              #ffffff;
+    }
+    .menu-icon 
+    {
+      display:            block;
+    }
+
+    .content
+    {
+      width:              90%;
+      font-size:          15px;
+    }
+
+    .footerleft
+    {
+      width:              90%;
+      margin-bottom:      4%;
+      text-align:         center;
+    }
+    .addressbar
+    {
+      margin-top:         135%;
+    }
+  }
