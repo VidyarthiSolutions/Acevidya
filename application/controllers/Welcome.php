@@ -9,12 +9,12 @@ class Welcome extends CI_Controller {
 		$this->load->helper('url');
 	}
 
-	/*public function index()
+	public function index()
 	{
 		$this->load->view('landingPage/header');
 		$this->load->view('landingPage/main');
 		$this->load->view('landingPage/footer');
-	}*/
+	}
 
 	public function challenge()
 	{
@@ -50,12 +50,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('landingPage/footer');
 	}
 
-	public function index()
+	/*public function index()
 	{
 		$this->load->view('landingPage/header');
 		$this->load->view('blogs/blog_main');
 		$this->load->view('landingPage/footer');
-	}
+	}*/
 }
 
 ?>
