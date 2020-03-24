@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
       <head>
             <meta charset="UTF-8">
@@ -37,10 +37,10 @@
                         <div class="logo">Acevidya</div>
                         <div class="menu">
                               <ul>
-                                    <!-- <li><a href="#">Courses</a></li>
+                                    <!-- <li><a href="#">Courses</a></li> -->
                                     <li><a href="#">Resume & CV Writing</a></li>
                                     <li><a href="#">Resume & CV Samples</a></li>
-                                    <li><a href="#">Interview Tips</a></li> -->
+                                    <li><a href="#">Interview Tips</a></li>
                                     <li><a href = "<?=base_url('welcome/')?>">Blog</a></li>
                               </ul>
                         </div>

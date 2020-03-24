@@ -1,38 +1,44 @@
 <div class="footer">
             <!--Footer Contents here-->
             <div class="socialBar">
-                  <a href = "https://www.linkedin.com/company/vidyarthi-solutions"><i class="fa fa-linkedin      fa-2x"></i></a>
-                  <a href = "https://instagram.com/vidyarthisolutions?igshid=15mslmn9j3j2n"><i class="fa fa-instagram     fa-2x"></i></a>
-                  <a href = "https://twitter.com/VidyarthiSolut1"><i class="fa fa-twitter       fa-2x"></i></a>
-                  <a href = "https://www.facebook.com/Vidyarthi-Solutions-104925931132218/1"><i class="fa fa-facebook      fa-2x"></i></a>
+                  <a href = "https://www.linkedin.com/company/vidyarthi-solutions">             <i class="fa fa-linkedin      fa-2x"></i></a>
+                  <a href = "https://instagram.com/vidyarthisolutions?igshid=15mslmn9j3j2n">    <i class="fa fa-instagram     fa-2x"></i></a>
+                  <a href = "https://twitter.com/VidyarthiSolut1">                              <i class="fa fa-twitter       fa-2x"></i></a>
+                  <a href = "https://www.facebook.com/Vidyarthi-Solutions-104925931132218/1">   <i class="fa fa-facebook      fa-2x"></i></a>
             </div>
+
             <div class="footerleft">
                   <h4>Vidyamin</h4>
-                  <a href="">Resume Templates</a>&nbsp<br>
-                  <a href="">CV Templates</a>&nbsp<br>
-                  <a href="">Cover Letters</a>&nbsp<br>
-                  <a href="">Samples</a><br>
+                  <a href = "#">Resume Templates</a><br>
+                  <a href = "#">CV Templates</a><br>
+                  <a href = "#">Cover Letters</a><br>
+                  <a href = "#">Samples</a><br><br>
             </div>
+
             <div class="footerleft">
                   <h4>Resources</h4>
-                  <a href="">Blog</a>&nbsp<br>
-                  <a href="">Career Development</a>&nbsp<br>
-                  <a href="">Interview Tips</a><br>
+                  <a href = "#" >Blog</a>&nbsp<br>
+                  <a href = "#" >Career Development</a>&nbsp<br>
+                  <a href = "#" >Interview Tips</a><br>
             </div>
+            
             <div class="footerleft">
                   <h4>Others</h4>
-                  <a href="">About Us</a>&nbsp<br>
-                  <a href="">Work with Us</a>&nbsp<br>
-                  <a href="">Contact Us</a>&nbsp<br>
-                  <a href="">FAQs</a>
+                  <a href="#">About Us</a>&nbsp<br>
+                  <a href="#">Work with Us</a>&nbsp<br>
+                  <a href="#">Contact Us</a>&nbsp<br>
+                  <a href="#">FAQs</a>
             </div>
+            
             <div class="footerleft">
                   <h4>Legal</h4>
-                  <a href="">Privacy Policy</a>&nbsp<br>
-                  <a href="">Terms of Use</a>&nbsp<br>
-                  <a href="">Affiliates</a>&nbsp<br>
+                  <a href="#">Privacy Policy</a>&nbsp<br>
+                  <a href="#">Terms of Use</a>&nbsp<br>
+                  <a href="#">Affiliates</a>&nbsp<br>
             </div>
+            
             <br>
+            
             <div class="addressbar">
                   Vivekananda Sarani<br>
                   Kolkata 700078 India<br>

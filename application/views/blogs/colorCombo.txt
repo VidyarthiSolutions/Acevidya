@@ -1,0 +1,36 @@
+dark green
+
+HTML/HEX code:	#0c4e4d	
+RGB code:	rgb(12, 78, 77)	
+Hsl code:	hsl(179, 73%, 18%)	
+Hwb code:	hwb(179, 5%, 69%)	
+Cmyk code:	cmyk(85%, 0%, 1%, 69%)	
+Ncol code:	G98, 5%, 69%	
+
+
+Lighter green
+
+HTML/HEX code:	#199e9d	
+RGB code:	rgb(25, 158, 157)	
+Hsl code:	hsl(180, 73%, 36%)	
+Hwb code:	hwb(180, 10%, 38%)	
+Cmyk code:	cmyk(84%, 0%, 1%, 38%)	
+Ncol code:	G99, 10%, 38%
+
+More Lighter green
+
+HTML/HEX code:	#1fc7c7	
+RGB code:	rgb(31, 199, 199)	
+Hsl code:	hsl(180, 73%, 45%)	
+Hwb code:	hwb(180, 12%, 22%)	
+Cmyk code:	cmyk(84%, 0%, 0%, 22%)	
+Ncol code:	C0, 12%, 22%
+
+Lightest green
+
+HTML/HEX code:	#4ed6d4	
+RGB code:	rgb(78, 214, 212)	
+Hsl code:	hsl(179, 62%, 57%)	
+Hwb code:	hwb(179, 31%, 16%)	
+Cmyk code:	cmyk(64%, 0%, 1%, 16%)	
+Ncol code:	G99, 31%, 16%

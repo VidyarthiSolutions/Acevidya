@@ -3,7 +3,7 @@
 main
   {
     min-height:           80vh;
-    padding-top:          10vh;
+    padding-top:          5vh;
     padding-bottom:       5vh;
     background-color:     #fff;
   }
@@ -35,13 +35,19 @@ main
 
 #intro
   {
-    height:               60vh  !important;
-    background-image:     url("<?=base_url('assets/img/Landing_Page/background.jpg')?>");
+    height:                     60vh  !important;
+    background-image:           linear-gradient(#0c4e4d, #199e9d,#1fc7c7);
+    clip-path: polygon(
+                                0 0,
+                                100% 0,
+                                100% 100%,
+                                0 calc(100% - 5vw)
+  );
   }
-
 .intro-test
   	{
-    	padding-top:     20%;
+    	padding-top:              20%;
+      transform:                skewY(6deg);
   	}
 li
 {
@@ -52,26 +58,56 @@ li
 big
   {
     font-weight:          bold;
-    font-size:            30px;
+    font-size:            20px;
     color:                black;
+    text-transform:       uppercase;
+    color:                #0c4e4d;
   }
 .blogPost
   {
-     box-shadow:          0 8px 16px 0 rgba(0,0,0,0.2);
-     padding:             5%;
-     border-radius:       5px;
-     margin:              2%;
+    padding:             5%;
+    border-radius:       5px;
+    margin:              2%;
+    transition:          all .2s ease-in-out;
   }
+
+  .column
+  { 
+    float:               left;
+    width:               33%;
+    margin-bottom:       20px;
+  }
+  .blogPost:hover
+  {
+    box-shadow:          0 12px 20px 0 rgba(0,0,0,0.2);
+    transform:           scale(1.06); 
+  }
+
   h2,h3
   {
     color:                #ffffff;
   }
+
+  .blogPost img
+  {
+    width:               100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column
+    {
+      width:              100%;
+      display:            block;
+      margin-bottom:      20px;
+    }
+}
+
 </style>
 
 <section id="intro">
   <div class="intro-text">
   	<br><br><br><br><br>
-    <h2>Acevidya</h2>
+    <h2>Acevidya<sup>(blogs)</sup></h2>
     <h3>Simple, effective and efficient</h3>
     <a href="#challengeInformation" class="btn-get-started scrollto">Let's start reading</a>
   </div>
@@ -79,21 +115,48 @@ big
 
 <main>
 	<div class = "container" id = "challengeInformation">
-		  <div class = "blogPost">
-        <big>Necessity of Internships</big><hr>
-        <p>This seems to be the biggest issue for young adults transitioning into the workforce these days.
-          Employers in today’s labor market rely heavily on resumes that illustrate a relevant work history, whether that’s from internships, volunteer work, or actual job experience.
-          A practical work background carries a major significance when attempting...<a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></p>   
+      <div class = "row">
+        
+        <div class = "column">
+    		  <div class = "blogPost">
+            <img src = "<?=base_url('assets/img/1.png')?>">
+            <center><big>Necessity of Internships</big></center>
+            <small>February 2020 | <i class="fa fa-clock-o" aria-hidden="true"></i> 4 min Read</small>
+            <hr>
+            <p>Learn how Intershipts affect your job prospects</p>
+            <center><a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></center>   
+          </div>
+        </div>
+
+        <div class = "column">
+          <div class = "blogPost">
+            <img src = "<?=base_url('assets/img/2.png')?>">
+            <center><big>Top Ten emerging careers</big></center>
+            <small>February 2020 | <i class="fa fa-clock-o" aria-hidden="true"></i> 4 min Read</small>
+            <hr>
+            <p>Learn how Intershipts affect your job prospects</p>
+            <center><a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></center>   
+          </div>
+        </div>
+
+        <div class = "column">
+          <div class = "blogPost">
+            <img src = "<?=base_url('assets/img/3.png')?>">
+            <center><big>How to make a good CV</big></center>
+            <small>February 2020 | <i class="fa fa-clock-o" aria-hidden="true"></i> 4 min Read</small>
+            <hr>
+            <p>Learn how Intershipts affect your job prospects</p>
+            <center><a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></center>   
+          </div>
+        </div>
+        
       </div>
 
-      <div class = "blogPost">
-        <big>Know the differences between a CV and Resume</big><hr>
-        <p>You all must have heard about both, but are accustomed to use one or the other. All job applications follow different sets of rules and hence you need to know when to use a CV or a Resume......<a href = "<?=base_url('welcome/read/cv_and_resume')?>" class = "mainButtonBright">Read More</a></p>   
-      </div>
-
-      <div class = "blogPost">
-        <big>Improving Communication Skills</big><hr>
-        <p>Communication skills are an important aspect of our everyday life. But sound communication skills require time and effort, which shall pay you back in many folds. Everytime you go for campus placements, you have to make them aware about yourself in a limited and short time. Among hundreds of candidates similar academic backgrounds...<a href = "<?=base_url('welcome/read/communication_skills')?>" class = "mainButtonBright">Read More</a></p>   
-      </div>
 	</div>
 </main>
+
+<div class = "fixed-bottom alert alert-danger">
+  This site uses cookies
+  <a href="#" class="btn btn-success float-right" data-dismiss="alert" aria-label="close">COOL</a>
+  <a href="#" class="btn btn-default float-right" >REVIEW</a>
+</div>

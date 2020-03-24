@@ -15,13 +15,6 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
     font-family:          'Muli', sans-serif !important;
     font-weight:          lighter;
   }
-
-  header 
-  {
-    width:                100%;
-    /*height:             40vh !important;*/
-    background-size:      cover;
-  }
   
   hr
   { 
@@ -136,13 +129,7 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
     color:                #fff;
     display:              none;
   }
-
-  .dataRender a
-  {
-    text-decoration:      none;
-    color:                #546e7a;
-  }
-
+  
   .addressbar
   {
     text-align:           justify-all;
@@ -162,13 +149,6 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
     color:                white;
     text-align:           center;
     font-size:            15px;
-  }
-
-  .footer a
-  {
-    text-decoration:      none;
-    padding-top:          50%;
-    color:                #fff;
   }
 
   .footerleft
