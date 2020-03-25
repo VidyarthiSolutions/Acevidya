@@ -2,27 +2,27 @@
 FONT FAMILY:      Muli;
 COLOR HEX-CODE:   #546e7a;
 REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PARAGRAPH;
-*/  
-  html, body 
+*/
+  html, body
   {
     margin:               0;
     padding:              0;
     width:                100%;
   }
 
-  body 
+  body
   {
     font-family:          'Muli', sans-serif !important;
     font-weight:          lighter;
   }
-  
+
   hr
-  { 
+  {
     display:              block;
     border-top:           3px solid #546e7a;
   }
 
-  .content 
+  .content
   {
     margin:               4em auto;
   }
@@ -32,17 +32,17 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
     width:                100%;
   }
 
-  h3    
+  h3
   {
     color:                #546e7a;
   }
 
-  h1    
+  h1
   {
     color:                #546e7a;
-  }   
+  }
 
-  .logo 
+  .logo
   {
     line-height:          40px;
     position:             fixed;
@@ -69,7 +69,7 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
     z-index:              99;
   }
 
-  nav ul 
+  nav ul
   {
     line-height:          30px;
     list-style:           none;
@@ -83,9 +83,9 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
     transition:           1s;
   }
 
-  nav.black ul 
+  nav.black ul
   {
-    background-color:     rgba(84,110,122,0.8);
+    background-color:     rgba(255, 255, 255, 0);
   }
 
   nav ul li
@@ -94,19 +94,19 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
     padding:              10px 30px;
   }
 
-  nav ul li:hover 
+  nav ul li:hover
   {
     cursor:               pointer;
   }
 
-  nav ul li a 
+  nav ul li a
   {
     text-decoration:      none;
     font-size:            15px;
     transition:           1s;
     color:                #ffffff !important;
   }
-  
+
   nav.black ul li a
   {
     color:                #ffffff;
@@ -129,18 +129,18 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
     color:                #fff;
     display:              none;
   }
-  
+
   .addressbar
   {
     text-align:           justify-all;
     width:                100%;
     margin-top:           13%;
-    padding-top:          2%; 
+    padding-top:          2%;
     padding-bottom:       4%;
     background-color:     #050F0B;
   }
 
-  .footer 
+  .footer
   {
     padding-top:          2%;
     width:                100%;
@@ -162,15 +162,15 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
   .socialBar
   {
     width:                100%;
-    margin-bottom:        1%; 
-    text-align:           center;    
+    margin-bottom:        1%;
+    text-align:           center;
   }
   .socialBar a
   {
     padding:              3%;
   }
 
-  .grid-container 
+  .grid-container
   {
     display:              grid;
     grid-template-columns:auto auto auto;
@@ -182,12 +182,12 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
     color:                black;
     font-weight:          lighter;
   }
-  .grid-item 
+  .grid-item
   {
     text-align:           justify-all;
     margin:               3%;
   }
-  .datetime 
+  .datetime
   {
     font-size:            14px;
     margin-top:           -5%;
@@ -201,7 +201,7 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
   .courseDiv:hover
   {
     border:               2px solid #546e7a;
-    transform:            scale(1.08); 
+    transform:            scale(1.08);
     cursor:               pointer;
   }
   .courseDiv img
@@ -212,14 +212,14 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
 
   @media(max-width: 650px)
   {
-    
+
     .grid-container
     {
       display: grid;
       grid-template-columns: auto;
     }
 
-    .logo 
+    .logo
     {
       position:           fixed;
       top:                0;
@@ -228,23 +228,23 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
       margin-left:        37%;
     }
 
-    nav ul 
+    nav ul
     {
       max-height:         0px;
       background-color:   #546e7a;
     }
 
-    nav.black ul 
+    nav.black ul
     {
-      background-color:   #546e7a;
+      background-color:     rgba(255, 255, 255, 0);
     }
 
-    .showing 
+    .showing
     {
       max-height:         34em;
     }
 
-    nav ul li 
+    nav ul li
     {
       box-sizing:         border-box;
       width:              100%;
@@ -256,7 +256,7 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
     {
       color:              #ffffff;
     }
-    .menu-icon 
+    .menu-icon
     {
       display:            block;
     }

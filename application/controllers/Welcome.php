@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
-	
+
 	function __construct(){
 
 		parent::__construct();
@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('landingPage/header');
 		$this->load->view('landingPage/challenge');
-		$this->load->view('landingPage/footer');	
+		$this->load->view('landingPage/footer');
 	}
 
 	public function read($blogName="")
