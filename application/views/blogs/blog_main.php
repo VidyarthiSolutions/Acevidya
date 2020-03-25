@@ -107,7 +107,7 @@ big
 <section id="intro">
   <div class="intro-text">
   	<br><br><br><br><br>
-    <h2>Acevidya<sup>(blogs)</sup></h2>
+    <h2>acevidya<sub>placements</sub></h2>
     <h3>Simple, effective and efficient</h3>
     <a href="#challengeInformation" class="btn-get-started scrollto">Let's start reading</a>
   </div>
