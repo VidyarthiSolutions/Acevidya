@@ -6,8 +6,9 @@ main
     padding-top:          5vh;
     padding-bottom:       5vh;
     background-color:     #fff;
+    color:                #000000;
   }
-  
+
 
 .mainButtonBright
   	{
@@ -21,7 +22,7 @@ main
       transition:         0.5s;
       margin:             10px;
       color:              #000;
-      background-color:   #defcef;
+      background-color:   #FFCC46;
 
   	}
 
@@ -33,16 +34,26 @@ main
     color:                #000000;
   }
 
+  p {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 5em;
+  }
+
+
+
 #intro
   {
-    height:                     60vh  !important;
-    background-image:           linear-gradient(#0c4e4d, #199e9d,#1fc7c7);
-    clip-path: polygon(
+    /* height:                     60vh  !important; */
+    height: 100vh;
+    background-image:           linear-gradient(#FFCC46, #FFCC46, #FFCC46);
+    /* clip-path: polygon(
                                 0 0,
                                 100% 0,
                                 100% 100%,
                                 0 calc(100% - 5vw)
-  );
+  ); */
+    /* background-color: #FFD464; */
   }
 .intro-test
   	{
@@ -61,7 +72,7 @@ big
     font-size:            20px;
     color:                black;
     text-transform:       uppercase;
-    color:                #0c4e4d;
+    color:                #000000;
   }
 .blogPost
   {
@@ -72,7 +83,7 @@ big
   }
 
   .column
-  { 
+  {
     float:               left;
     width:               33%;
     margin-bottom:       20px;
@@ -80,12 +91,12 @@ big
   .blogPost:hover
   {
     box-shadow:          0 12px 20px 0 rgba(0,0,0,0.2);
-    transform:           scale(1.06); 
+    transform:           scale(1.06);
   }
 
   h2,h3
   {
-    color:                #ffffff;
+    color:                #000000;
   }
 
   .blogPost img
@@ -102,21 +113,96 @@ big
     }
 }
 
+  .fl-right
+  {
+    float: right;
+  }
+
 </style>
+
+
+
+<script>
+<!-- /* Text animation js script */ -->
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  /* // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css); */
+};
+
+/* End */
+</script>
 
 <section id="intro">
   <div class="intro-text">
   	<br><br><br><br><br>
-    <h2>acevidya<sub>placements</sub></h2>
+    <h2 style="color: black">acevidya
+      <sub>
+        <span     class="txt-rotate"     data-period="2000"     data-rotate='[ "blog" ]'></span>
+      </sub>
+    </h2>
     <h3>Simple, effective and efficient</h3>
-    <a href="#challengeInformation" class="btn-get-started scrollto">Let's start reading</a>
+    <img src="<?=base_url('assets/img/girl-on-mac.png')?>" class="fl-right" style="max-width:20%;height:auto;" >
+    <a href="#challengeInformation" class="btn-get-started scrollto" style="color: black; background-color: white">Let's start reading</a>
+
   </div>
 </section>
 
 <main>
 	<div class = "container" id = "challengeInformation">
       <div class = "row">
-        
+
         <div class = "column">
     		  <div class = "blogPost">
             <img src = "<?=base_url('assets/img/1.png')?>">
@@ -124,7 +210,7 @@ big
             <small>February 2020 | <i class="fa fa-clock-o" aria-hidden="true"></i> 4 min Read</small>
             <hr>
             <p>Learn how Intershipts affect your job prospects</p>
-            <center><a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></center>   
+            <center><a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></center>
           </div>
         </div>
 
@@ -135,7 +221,7 @@ big
             <small>February 2020 | <i class="fa fa-clock-o" aria-hidden="true"></i> 4 min Read</small>
             <hr>
             <p>Learn how Intershipts affect your job prospects</p>
-            <center><a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></center>   
+            <center><a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></center>
           </div>
         </div>
 
@@ -146,10 +232,10 @@ big
             <small>February 2020 | <i class="fa fa-clock-o" aria-hidden="true"></i> 4 min Read</small>
             <hr>
             <p>Learn how Intershipts affect your job prospects</p>
-            <center><a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></center>   
+            <center><a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></center>
           </div>
         </div>
-        
+
       </div>
 
 	</div>
