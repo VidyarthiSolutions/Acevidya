@@ -156,6 +156,12 @@ big
     {
       padding:              3%;
     }
+    
+    .headerImg img
+    {
+        width:               100%;
+        transform:           scale(0.8);
+    }
   }
 </style>
 
