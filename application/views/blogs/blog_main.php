@@ -44,23 +44,11 @@ main
 
 
 #intro
-  {
-    /* height:                     60vh  !important; */
-    height: 100vh;
-    background-image:           linear-gradient(#FFCC46, #FFCC46, #FFCC46);
-    /* clip-path: polygon(
-                                0 0,
-                                100% 0,
-                                100% 100%,
-                                0 calc(100% - 5vw)
-  ); */
-    /* background-color: #FFD464; */
+  { 
+    height:                     60vh;
+    background-image:           linear-gradient(#03adfc, #82c7e0,#82c7e0);
   }
-.intro-test
-  	{
-    	padding-top:              20%;
-      transform:                skewY(6deg);
-  	}
+
 li
 {
 	font-weight: 		bold;
@@ -105,145 +93,143 @@ big
     width:               100%;
   }
 
-  @media screen and (max-width: 600px) {
+  .headerImg img
+  {
+    width:               100%;
+    transform:           scale(0.6);
+  }
+   .headerImg
+    {
+      margin-top:         -7%;
+    }
+  .intro-header
+  {
+    margin-top:          25vh;
+  }
+
+
+  .secondaryMenu
+  {
+    width:                100%;
+    height:               10%;
+    background-color:     #f5f5f5;
+    display:              block;
+    padding:              1%;
+  }
+
+  .secondaryMenu a
+  {
+    text-decoration:      none;
+    margin-left:          3%;
+    margin-right:         3%;
+    cursor:               pointer;
+    color:                #000;
+    font-size:            17px;
+    text-transform:       uppercase;
+  }
+
+  @media screen and (max-width: 600px) 
+  {
     .column
     {
       width:              100%;
       display:            block;
       margin-bottom:      20px;
     }
-}
+    
+    .intro-header
+    {
+      margin-top:          0vh;
+    }
+    
+    #intro
+    { 
+      height:             100vh;
+    }
+   
+    .headerImg
+    {
+      margin-top:         10%;
+    }
 
-  .fl-right
-  {
-    float: right;
+    .secondaryMenu
+    {
+      padding:              3%;
+    }
   }
-
 </style>
 
 
 
-<script>
-<!-- /* Text animation js script */ -->
-var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
 
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 300 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  /* // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css); */
-};
-
-/* End */
-</script>
 
 <section id="intro">
-  <div class="intro-text">
-  	<br><br><br><br><br>
-    <h2 style="color: black">acevidya
-      <sub>
-        <span     class="txt-rotate"     data-period="2000"     data-rotate='[ "blog" ]'></span>
-      </sub>
-    </h2>
-    <h3>Simple, effective and efficient</h3>
-    <img src="<?=base_url('assets/img/girl-on-mac.png')?>" class="fl-right" style="max-width:20%;height:auto;" >
-    <a href="#challengeInformation" class="btn-get-started scrollto" style="color: black; background-color: white">Let's start reading</a>
+  <div class = "container">
+    <div class="row">
 
+      <div class="col-sm headerImg">
+        <img src="<?=base_url('assets/img/girl-on-mac.png')?>">
+      </div>
+
+      <div class="col-sm">
+        <center class = "intro-header">
+          <h2 style="color: black">acevidya
+            <sub>
+              <span     class="txt-rotate"     data-period="2000"     data-rotate='[ "blog" ]'></span>
+            </sub>
+          </h2>
+          <h3>Simple, effective and efficient</h3>
+          <a href="#challengeInformation" class="btn-get-started scrollto" style="color: black; background-color: white">Let's start reading</a>
+        </center>
+      </div>
+      
+    </div>
   </div>
 </section>
 
+<div class = "secondaryMenu">
+  <a href = "">All</a>
+  <a href = "">Popular</a>
+  <a href = "">Latest</a>
+  <a href = "" class = "float-right"><i class="fa fa-search" aria-hidden="true"></i></a>
+</div>
+
 <main>
 	<div class = "container" id = "challengeInformation">
-      <div class = "row">
-
-        <div class = "column">
-    		  <div class = "blogPost">
-            <img src = "<?=base_url('assets/img/1.png')?>">
-            <center><big>Necessity of Internships</big></center>
-            <small>February 2020 | <i class="fa fa-clock-o" aria-hidden="true"></i> 4 min Read</small>
-            <hr>
-            <p>Learn how Intershipts affect your job prospects</p>
-            <center><a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></center>
-          </div>
-        </div>
-
-        <div class = "column">
-          <div class = "blogPost">
-            <img src = "<?=base_url('assets/img/2.png')?>">
-            <center><big>Top Ten emerging careers</big></center>
-            <small>February 2020 | <i class="fa fa-clock-o" aria-hidden="true"></i> 4 min Read</small>
-            <hr>
-            <p>Learn how Intershipts affect your job prospects</p>
-            <center><a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></center>
-          </div>
-        </div>
-
-        <div class = "column">
-          <div class = "blogPost">
-            <img src = "<?=base_url('assets/img/3.png')?>">
-            <center><big>How to make a good CV</big></center>
-            <small>February 2020 | <i class="fa fa-clock-o" aria-hidden="true"></i> 4 min Read</small>
-            <hr>
-            <p>Learn how Intershipts affect your job prospects</p>
-            <center><a href = "<?=base_url('welcome/read/internship')?>" class = "mainButtonBright">Read More</a></center>
-          </div>
-        </div>
-
-      </div>
-
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</div>
 </main>
-
-<div class = "fixed-bottom alert alert-danger">
-  This site uses cookies
-  <a href="#" class="btn btn-success float-right" data-dismiss="alert" aria-label="close">COOL</a>
-  <a href="#" class="btn btn-default float-right" >REVIEW</a>
-</div>

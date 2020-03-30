@@ -34,7 +34,7 @@
                         <div class="menu-icon">
                               <i class="fa fa-bars fa-2x"></i>
                         </div>
-                        <div class="logo" style="font-family: Kalam">acevidya</div>
+                        <div class="logo">acevidya</div>
                         <div class="menu">
                               <ul>
                                     <!-- <li><a href="#">Courses</a></li> -->

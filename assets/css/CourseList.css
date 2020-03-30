@@ -85,7 +85,8 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
 
   nav.black ul
   {
-    background-color:     #FFCC46
+    background-color:     #03adfc;
+    box-shadow:           0 4px 8px 0 rgba(0,0,0,0.2);
   }
 
   nav ul li
@@ -121,7 +122,7 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
   {
     line-height:          30px;
     width:                100%;
-    background-color:     #546e7a;
+    background-color:     #03adfc;
     text-align:           right;
     box-sizing:           border-box;
     padding:              15px 18px;
@@ -129,7 +130,10 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
     color:                #fff;
     display:              none;
   }
-
+  .menu-icon.black
+  {
+    box-shadow:           0 4px 8px 0 rgba(0,0,0,0.2);
+  }
   .addressbar
   {
     text-align:           justify-all;
@@ -236,7 +240,7 @@ REMARKS:          USE H3 FOR HEADER, HR FOR HORIZONTAL LINE AND P TAG FOR THE PA
 
     nav.black ul
     {
-      background-color:     #FFCC46
+      background-color:     #03adfc;
     }
 
     .showing
