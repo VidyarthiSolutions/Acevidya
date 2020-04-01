@@ -33,7 +33,7 @@ class Welcome extends CI_Controller {
 	public function blog()
 	{
 		$this->load->view('landingPage/header');
-		$this->load->view('blogs/blog_main');
+		$this->load->view('blogs/template');
 		$this->load->view('landingPage/footer');
 	}
 }
