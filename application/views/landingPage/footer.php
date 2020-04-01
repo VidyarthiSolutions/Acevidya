@@ -8,7 +8,7 @@
             </div>
 
             <div class="footerleft">
-                  <h4>Vidyamin</h4>
+                  <h4>acevidya</h4>
                   <a href = "#">Resume Templates</a><br>
                   <a href = "#">CV Templates</a><br>
                   <a href = "#">Cover Letters</a><br>
@@ -21,7 +21,7 @@
                   <a href = "#" >Career Development</a>&nbsp<br>
                   <a href = "#" >Interview Tips</a><br>
             </div>
-            
+
             <div class="footerleft">
                   <h4>Others</h4>
                   <a href="#">About Us</a>&nbsp<br>
@@ -29,30 +29,30 @@
                   <a href="#">Contact Us</a>&nbsp<br>
                   <a href="#">FAQs</a>
             </div>
-            
+
             <div class="footerleft">
                   <h4>Legal</h4>
                   <a href="#">Privacy Policy</a>&nbsp<br>
                   <a href="#">Terms of Use</a>&nbsp<br>
                   <a href="#">Affiliates</a>&nbsp<br>
             </div>
-            
+
             <br>
-            
+
             <div class="addressbar">
                   Vivekananda Sarani<br>
                   Kolkata 700078 India<br>
                   Copyright © 2019 Vidyarthi Foundations All Rights Reserved.<br>
-            </div>      
+            </div>
       </div>
 
       <!--JQUERY FILES-->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-      
+
       <!--ANGULAR FILES-->
       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
       <script src='<?=base_url("assets/js/courseList.js")?>'></script>
-      
+
       <script src="<?=base_url('assets/lib/jquery/jquery.min.js')?>"></script>
       <script src="<?=base_url('assets/lib/jquery/jquery-migrate.min.js')?>"></script>
       <script src="<?=base_url('assets/lib/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
@@ -68,7 +68,7 @@
       <script src='<?=base_url("assets/js/landingPage.js")?>'></script>
 
       <script type="text/javascript">
-      
+
       $(document).ready(function() {
             $(".menu-icon").on("click", function() {
                   $("nav ul").toggleClass("showing");
