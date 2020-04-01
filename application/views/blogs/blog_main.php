@@ -1,53 +1,57 @@
 <style type="text/css">
 
 main
-  {
-    min-height:           80vh;
-    padding-top:          5vh;
-    padding-bottom:       5vh;
-    background-color:     #fff;
-    color:                #000000;
-  }
-
+{
+  min-height:           80vh;
+  padding-top:          5vh;
+  padding-bottom:       5vh;
+  background-color:     #fff;
+  color:                #000000;
+}
+.blog_container
+{
+  width:                55%;
+  margin:               auto;
+  font-size:            20px;
+  padding:              1%;
+  border-radius:        5px;
+}
 
 .mainButtonBright
-  	{
-      font-family:        'Muli', sans-serif;
-      font-weight:        400;
-      font-size:          16px;
-      letter-spacing:     1px;
-      display:            inline-block;
-      padding:            8px 28px;
-      border-radius:      50px;
-      transition:         0.5s;
-      margin:             10px;
-      color:              #000;
-      background-color:   #FFCC46;
-
-  	}
+{
+  font-family:          'Muli', sans-serif;
+  font-weight:          400;
+  font-size:            16px;
+  letter-spacing:       1px;
+  display:              inline-block;
+  padding:              8px 28px;
+  border-radius:        50px;
+  transition:           0.5s;
+  margin:               10px;
+  color:                #000;
+  background-color:     #FFCC46;
+}
 
 .mainButtonBright:hover
-  {
-    cursor:               pointer;
-    transition:           scale(1.08);
-    box-shadow:           0 8px 16px 0 rgba(0,0,0,0.2);
-    color:                #000000;
-  }
+{
+  cursor:               pointer;
+  transition:           scale(1.08);
+  box-shadow:           0 8px 16px 0 rgba(0,0,0,0.2);
+  color:                #000000;
+}
 
-  p {
-    font-size: 2.5em;
-    text-align: center;
-    margin-top: 5em;
-  }
-
-
-
+p 
+{
+  font-size:            2.5em;
+  text-align:           center;
+  margin-top:           5em;
+}
 
 #intro
-  { 
-    height:                     60vh;
-    background-image:           linear-gradient(#03adfc, #82c7e0,#82c7e0);
-  }
+{ 
+  height:               60vh;
+  background-image:     linear-gradient(#03adfc, #82c7e0,#82c7e0);
+}
 
 li
 {
@@ -162,6 +166,11 @@ big
         width:               100%;
         transform:           scale(0.8);
     }
+
+    .blog_container
+    {
+      width:                99%;
+    }
   }
 </style>
 
@@ -201,7 +210,7 @@ big
 </div>
 
 <main>
-	<div class = "container" id = "challengeInformation">
+	<div class = "blog_container">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

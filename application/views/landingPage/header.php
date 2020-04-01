@@ -24,7 +24,7 @@
 
             <!-- Main Stylesheet File -->
             <link href  = "<?=base_url('assets/css/CourseList.css')?>"  rel  = "stylesheet">
-            <link href  = "<?=base_url('assets/css/landingpage.css')?>" rel="stylesheet">
+            <link href  = "<?=base_url('assets/css/landingpage.css')?>" rel  = "stylesheet">
       </head>
 
       <body>
